@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barcelona Hub</title>
+    <link rel="icon" href="crest.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href=""> <img src="crest.jpeg" alt="#" class="crest" /> </a>
+      </div>
+      <div class="slogan">"Més Que Un Club"</div>
+      <nav class="navigation">
+        <input type="checkbox" class="toggle-menu" />
+        <div class="hamburger"></div>
+
+        <ul class="menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="squad-list.html">Squad List</a></li>
+          <li><a href="history.html"> History</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="contact-us.html">Contact us</a></li>
+          <li><a href="log-in.html">Log in</a></li>
+          <li><a href="sign-up.html">Sign up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="login-container">
+      <h2 class="contact-heading">Login</h2>
+      <div class="log-pass">
+        <label for="login" id="login-label">Login:</label>
+        <input
+          type="text"
+          id="login"
+          name="login"
+          placeholder="Type your login"
+          required
+        />
+
+        <label for="pass" id="pass-label2">Password:</label>
+        <input
+          type="password"
+          id="pass2"
+          name="pass"
+          minlength="9"
+          placeholder="Type your Password"
+          required
+        />
+
+        <input type="submit" id="submit-btn" value="Log in" />
+
+        <a href="" id="pass-reset">Forgot your password?</a>
+      </div>
+    </div>
+  </body>
+</html>

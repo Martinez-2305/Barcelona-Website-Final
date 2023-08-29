@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barcelona Hub</title>
+    <link rel="icon" href="crest.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href=""> <img src="crest.jpeg" alt="#" class="crest" /> </a>
+      </div>
+      <div class="slogan">"Més Que Un Club"</div>
+      <nav class="navigation">
+        <input type="checkbox" class="toggle-menu" />
+        <div class="hamburger"></div>
+
+        <ul class="menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="squad-list.html">Squad List</a></li>
+          <li><a href="history.html"> History</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="contact-us.html">Contact us</a></li>
+          <li><a href="log-in.html">Log in</a></li>
+          <li><a href="sign-up.html">Sign up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="contact-container">
+      <h2 class="contact-heading">Contact Us</h2>
+      <p class="info-para">
+        If you have enquries about any of the content included within this
+        website or would like to make any suggestions please type in your
+        details and a message below- We'll aim to get back to you ASAP
+      </p>
+      <div class="contact-card">
+        <form action="submit-page.html" method="post">
+          <div class="input-container">
+            <div class="user-details">
+              <label for="name" id="name-label">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Type your name"
+                required
+              />
+
+              <label for="email" id="email-label">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@gmail.com"
+                required
+              />
+            </div>
+            <textarea
+              id="paragraph-input"
+              name="paragraph"
+              rows="8"
+              cols="50"
+              placeholder="Type your message here"
+            ></textarea>
+            <input type="submit" id="submit-btn" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

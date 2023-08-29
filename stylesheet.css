@@ -1,0 +1,864 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+*{
+font-family: Nunito;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+--color1:rgb(5, 5, 62);
+--color2:#9a0c0c;
+--color3:white;
+}
+body{
+background-color:var(--color1) ;
+color: var(--color3);
+}
+/*--------------------------------------------All Navbar properties styling ------------------------------------------------------------------*/
+.header{
+    position: relative;
+    min-width: 50rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+background-color: var(--color2);
+padding:0px 25px;
+transition: 0.3s;
+}
+.logo{
+    display:block;
+}
+.logo a img{
+    display: block;
+    max-width: 10%;
+    
+
+}
+.slogan{
+    width: 200px;
+    position: absolute;
+    left:200px;
+    font-family: Dancing Script;
+    font-size: 1.6rem;}
+.navigation{
+    
+    display: flex;
+    justify-content:space-between ;
+    align-items:center ;
+   
+}
+.menu{
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items:center ;
+    z-index: 1;
+    transition: 0.5s;
+}
+.menu li{
+    list-style-type: none;
+    text-align: center;
+}
+.menu li a{
+    color: var(--color3);
+    text-decoration: none;
+    display: block;
+    padding: 40px 25px;
+    font-size: 18px;
+    line-height: 1;
+    transition: 0.3s;
+}
+.menu li a:hover{
+    box-shadow: 0 -5px 0px #860a0a inset,
+    500px 0 0 #c21111 inset;
+    padding: 35px 25px 45px 25px;
+}
+.hamburger{
+   position: relative;
+   width:30px;
+   height: 4px;
+   background:var(--color3); 
+   border-radius: 10px;
+   cursor:pointer;
+   z-index: 2;
+   transition: 0.3s;
+}
+.hamburger:before,
+.hamburger:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background: var(--color2);
+    border-radius:10px;
+    transition: 0.3s;
+}
+.hamburger:before{
+top: -10px;
+width: 40px;
+}
+
+.hamburger:after{
+    top: 10px;
+    width: 55px;
+    
+    }
+
+.toggle-menu{
+position: absolute;
+width: 20px;
+height: 20%;
+z-index: 3;
+cursor:pointer;
+ opacity: 0;
+
+}
+
+.hamburger,
+.toggle-menu{
+display:none ;
+}
+
+
+.navigation input:checked ~ .hamburger:before{
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+
+.navigation input:checked ~ .hamburger:after{
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+}
+
+.navigation input:checked ~ .menu{
+    right: 0;
+
+}
+
+/*---------------------------------------------------------Content styling Home Page*--------------------------------------------------------*/
+
+.content-container{
+max-width: 99%;
+display: flex;
+flex-direction: row;
+margin-left: 20px;
+margin-top: 50px;
+gap: 2rem; 
+margin-bottom: 30px;
+}
+
+
+.p1-container{
+max-width: 50%;
+display: flex;
+flex-wrap: wrap;
+gap: 5em;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-left: 20px;
+
+}
+
+.photo1{
+max-width: 45rem;
+box-shadow: 23px -14px 43px 28px rgba(0,0,0,0.75);
+}
+#para1{
+max-width:75% ;
+}
+.p2-container{
+  max-width: 49rem;    
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+  justify-content: center;
+  margin-left: 50px;
+  
+    
+
+}
+
+/*----------------------------------------Ilkay Gundogan content- blue shirt guy at the top-------------------------------------------------- */
+    .gundo-pic{
+        width: 200px;
+        height: 200px;
+    border-radius: 300px;
+    
+    }
+   
+   
+    /*------------------------------------Vitor Roque content- red and black shirt guy------------------------------------------------------- */
+    .vitor-pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 300px;
+    
+    }
+    /*------------------------------------Joa Cancelo content- light blue shirt guy second from bottom----------------------------------------*/
+    .cancelo-pic{
+        width: 200px;
+        height: 200px;
+    border-radius: 300px;
+    
+    }
+     /*-----------------------------------Joshua Kimmich content- red and white shirt guy, bottom picture------------------------------------- */
+    .joshua-pic{
+        width: 200px;
+        height: 200px;
+    border-radius: 300px;
+   
+    }
+    /*-------------------------------------All containers holding the paraphraphs and player pics---------------------------------------------- */
+    .gundo-container, .vitor-container, .cancelo-container, .joshua-container{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      
+        
+    }
+    .para-gundo, .para-vitor, .para-cancelo, .para-joshua{
+        
+    }
+
+ #crest-home{
+    max-width: 100px;
+ }
+ .fixtures{
+   
+    min-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    gap: 2rem;
+ }
+ .main-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+ 
+ }
+ .fixture-holder{
+    min-width: 35vw;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+    margin-top: 40px;
+   
+    
+    
+    
+ }
+ .crest-h,.crest-a{
+    min-width: 18vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+ }
+ #crest-away{
+    max-width: 130px;
+ }
+
+ .date-time{
+   min-width: 5vw;
+   
+ }
+ .date-time p{
+    text-align: center;
+    min-width: 5vw;
+ }
+ 
+
+
+
+
+
+
+
+    
+
+
+/*----------------------------------------------------CSS applied to page "Squad List"-------------------------------------------------------- */
+
+ 
+.squad-list-container{
+
+display: flex;
+flex-direction: column;   
+}
+
+#keepers, #defenders, #midfielders, #strikers{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+h3{
+    margin: 30px auto;
+    padding: auto;
+    
+}
+
+ #keeper-1, #keeper-2,#defender-1, #defender-2, #defender-3, #defender-4, #defender-5, #mid-1, #mid-2, #mid-3, #mid-4, #mid-5, 
+#striker-1, #striker-2, #striker-3, #striker-4, #striker-5 {
+    max-width: 10%;
+    max-height: 10%;
+    border-radius: 30%;
+    
+}
+
+/*#name-hover1{
+    border-radius: ;
+    width: 10%;
+    height: 25%;
+   display: flex;
+   position: absolute;
+    opacity: 1;
+    transition: 0.6s;
+    color: var(--color2);
+    font-style: sans serif;
+    font-size: 1rem;
+    background-color: black;
+}
+#name-hover1:hover{
+opacity: 1;
+
+}*/
+
+/*----------------------------------------------------CSS applied to page "History"---------------------------------------------------------- */
+.history-main-container{
+max-width: 100%;    
+display: flex;
+gap: 5rem;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+.gamper-div, .cruyff-div, 
+.frank-div, .pep-div, .luis-div{
+display: flex;
+flex-wrap: nowrap;
+flex-direction: column;
+max-width: 60%;
+margin-top: 100px;
+align-items:center;
+justify-content: center;
+gap: 3rem;
+box-shadow: 23px -14px 43px 28px rgba(0,0,0,0.75);
+}
+
+.luis-div{
+    margin-bottom: 100px;
+}
+
+.paraG-holder, .paraJ-holder, .paraF-holder, .paraP-holder, .paraL-holder{
+    max-height: 30vh;
+    overflow-y: scroll;
+}
+.paraG-holder::-webkit-scrollbar {
+    width: 15px;  
+}
+
+.paraG-holder::-webkit-scrollbar-thumb {
+    background:var(--color1)
+}
+.paraG-holder::-webkit-scrollbar-track {
+    background: var(--color2);
+}
+
+.paraJ-holder::-webkit-scrollbar {
+    width: 15px;
+}
+
+.paraJ-holder::-webkit-scrollbar-thumb {
+    background: var(--color1)
+}
+
+.paraJ-holder::-webkit-scrollbar-track {
+    background: var(--color2);
+}
+
+.paraF-holder::-webkit-scrollbar {
+    width: 15px;
+}
+
+.paraF-holder::-webkit-scrollbar-thumb {
+    background: var(--color1)
+}
+
+.paraF-holder::-webkit-scrollbar-track {
+    background: var(--color2);
+}
+
+.paraP-holder::-webkit-scrollbar {
+    width: 15px;
+}
+
+.paraP-holder::-webkit-scrollbar-thumb {
+    background: var(--color1)
+}
+
+.paraP-holder::-webkit-scrollbar-track {
+    background: var(--color2);
+}
+
+.paraL-holder::-webkit-scrollbar {
+    width: 15px;
+}
+
+.paraL-holder::-webkit-scrollbar-thumb {
+    background: var(--color1)
+}
+
+.paraL-holder::-webkit-scrollbar-track {
+    background: var(--color2);
+}
+
+
+
+#gamper-pic{
+    max-width:40% ;
+   
+}
+.gamper-holder{
+    display: flex;
+    justify-content: center;
+
+}
+.johan-pic{
+    max-width:35% ;
+    
+    
+}
+.johan-pic2{
+    max-width:40% ;    
+}
+.johan-holder,.frank-holder, .pep-holder, .luis-holder{
+    display: flex;
+    justify-content: space-around;
+
+}
+.para-johan, .para-frank, .gamper-para  {
+    width: 95%;
+    padding-left: 60px;
+    
+
+}
+
+.paraP-holder, .paraL-holder{
+    display: flex;
+    justify-content: center;
+    
+}
+.para-luis, .para-pep{
+    width: 90%;
+    
+}
+.frank-pic{
+    max-width:30% ;
+}
+.ronnie-pic{
+    max-width: 35%;
+}
+.pep-pic{
+    max-width:40% ;
+    
+}
+.pep-pic2{
+    max-width: 30%;
+}
+
+.luis-pic{
+    max-width:20% ;
+    
+    
+}
+.luis-pic1{
+    max-width: 30%;
+}
+.msn{
+    max-width:30% ;
+   
+    
+}
+
+/*----------------------------------------------------------CSS applied to page "Videos"-----------------------------------------------------*/
+.video-container{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.video1-div, .video2-div, .video3-div, .video4-div, .video5-div, .video6-div, .video7-div, .video8-div, .video9-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+iframe{
+    box-shadow: 16px 7px 28px 12px rgba(0,0,0,0.78);
+}
+
+
+/*------------------------------------------------------CSS applied to page Contact Us ""----------------------------------------------------------------*/
+.contact-container{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    
+    
+}
+.contact-heading{
+    margin-top: 50px;
+}
+.contact-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 510px;
+    margin-top: 70px;
+    box-shadow: 23px -14px 43px 28px rgba(0,0,0,0.75);
+   
+}
+textarea {
+    max-width: 90%;
+    height: 300px;
+    background-color: var(--color2);
+    border-radius: 4px;
+    resize: vertical;
+    margin-top: 15px;
+    font-size: 1.2rem;
+color: var(--color3);
+border-radius: 5px;
+
+
+}
+textarea::placeholder{
+    padding: 10px;
+}
+.input-container{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+    
+    
+}
+#submit-btn{
+    width: 20%;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 32px;
+    background-color: var(--color2);
+    cursor: pointer;
+    color: var(--color1);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+#submit-btn:hover{
+    background-color:var(--color3)
+}
+
+.user-details{
+display: flex;
+flex-direction: column;
+}
+#name, #email{
+background-color: var(--color2);
+width: 470px;
+height: 50px;
+font-size: 1.2rem;
+color: var(--color3);
+border-radius: 10px;
+}
+#name, #email::placeholder{
+    padding: 10px;
+}
+#name-label, #email-label{
+font-size: 1.2rem;
+color: var(--color3);
+margin-top: 10px;
+
+}
+.info-para{
+    margin-top: 30px;
+    width: 510px;
+    font-family: Dancing Script;
+    font-size: 1.5rem;
+}
+
+/*-----------------------------------------------------CCS Applied to page Sign up----------------------------------------------------------------- */
+.sign-up-container{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sign-up-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 600px;
+    min-height: 400px;
+    
+    margin-top: 70px;
+    box-shadow: 23px -14px 43px 28px rgba(0,0,0,0.75);
+    
+}
+#fName, #lName, #pass, #new-email{
+    background-color: var(--color2);
+    width: 400px;
+    height: 40px;
+    font-size: 1.2rem;
+    color: var(--color3);
+    border-radius: 10px;
+    }
+    #fName, #lName, #pass, #new-email::placeholder{
+        padding-left: 10px;
+    }
+    #lName-label,#fName-label, #new-email-label,#pass-label{
+        font-size: 1.2rem;
+        color: var(--color3);
+        margin-top: 10px;
+        }
+   
+/*-----------------------------------------------------CCS Applied to page Log in----------------------------------------------------------------- */
+.login-container{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.log-pass{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 450px;
+    min-height: 350px;
+    margin-top: 70px;
+    box-shadow: 23px -14px 43px 28px rgba(0,0,0,0.75);
+}
+
+#login-label, #pass-label2{
+    font-size: 1.2rem;
+    color: var(--color3);
+    margin: 15px 0px;
+    width: 295px;
+    
+    
+}
+#login, #pass2{
+    background-color: var(--color2);
+    width:300px;
+    height: 40px;
+    font-size: 1.2rem;
+    color: var(--color3);
+    border-radius: 10px;
+}
+
+#pass-reset{
+margin-top: 15px;
+text-decoration: none;
+color: var(--color3);
+}
+#pass-reset:hover{
+    color: var(--color2);
+}
+
+/*-----------------------------------------------------Screen size adjustment----------------------------------------------------------------- */
+@media screen and (max-width: 1390px){
+
+    .hamburger{
+        max-width:2em ;
+    }
+    .hamburger,
+    .toggle-menu{
+    display: block;
+    }
+    .header{
+        padding: 10px 20px;
+    }
+    .menu{
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background: var(--color2);
+        width: 100%;
+        height: 100%;
+        padding-top: 65px ;
+}
+.menu li{
+width: 100%;
+}
+.menu li a{
+padding: 30px;
+font-size:1rem ;
+}
+.menu li a:hover{
+    box-shadow: -0 -5px var(--color2),
+    100%  var(--color2) inset;
+    padding: 35px 25px 45px 25px;
+}
+.logo a img{
+    display: block;
+    min-width: 10%;
+    
+
+}
+.slogan{
+   position: absolute;
+    font-family: Dancing Script;
+    font-size: 1.2rem;}
+
+    
+    .content-container{
+ max-width: 90%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    margin-top: 50px;
+    gap: 5rem;
+   
+       
+    }
+    .p1-container{
+        max-width: 99%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       justify-content: center;
+       margin-left: 20px;
+      
+    }
+    #para1{
+   min-width:40rem ;
+     
+    }
+    
+    .p2-container{
+       
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 99%;
+       
+      
+        
+   
+      }
+      .gundo-container, .vitor-container, .cancelo-container, .joshua-container{
+       
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1rem;
+        max-width: 100rem;
+      
+       
+       
+        
+      }
+      .para-gundo, .para-vitor, .para-cancelo, .para-joshua{
+      max-width: 100%;  
+      
+      
+    }
+
+
+    .date-time{
+   
+       
+     }
+     
+    /*#heading2{
+        
+    }
+    .gundo-pic, .vitor-pic, .cancelo-pic, .johan-pic{
+      
+    }*/
+      
+      /*----------------------------------------CSS applied to page Squad List page ----------------------------------------------------------- */
+    .squad-list-container{
+     
+    display: flex;
+    flex-direction: column;
+    min-width: 800px;  
+   }
+    #keepers, #defenders, #midfielders, #strikers{
+   display:flex;
+flex-direction: row;
+   gap: 2rem;
+    }
+    #keeper-1, #keeper-2, #defender-1, #defender-2, #defender-3, #defender-4, #defender-5, #mid-1, #mid-2, #mid-3, #mid-4, #mid-5,
+   #striker-1, #striker-2, #striker-3, #striker-4, #striker-5{
+min-width: 35%;
+   }
+
+/*----------------------------------------------CSS applied to page "History" ------------------------------------------------------------}*/
+.history-main-container{
+    min-width: 50rem;    
+  
+}
+.gamper-div, .stadiums-div, .badge-div, .cruyff-div, 
+.frank-div, .pep-div, .luis-div, .recent-div{
+
+    min-width: 90%;
+    min-height: 70%;
+
+
+}
+
+
+
+/*----------------------------------------------CSS applied to page "Videos"----------------------------------------------------------------*/
+.video1-div, .video2-div, .video3-div, .video4-div, .video5-div, .video6-div, .video7-div, .video8-div, .video9-div{
+    margin-left: 80px;
+}
+
+/*----------------------------------------------CSS applied to page "Contact Us"----------------------------------------------------------------*/
+
+.contact-container{
+    max-width: 50rem;
+    margin-left: 150px;
+    
+    
+    
+}
+}
+

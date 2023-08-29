@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barcelona Hub</title>
+    <link rel="icon" href="crest.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href=""> <img src="crest.jpeg" alt="#" class="crest" /> </a>
+      </div>
+      <div class="slogan">"Més Que Un Club"</div>
+      <nav class="navigation">
+        <input type="checkbox" class="toggle-menu" />
+        <div class="hamburger"></div>
+
+        <ul class="menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="squad-list.html">Squad List</a></li>
+          <li><a href="history.html"> History</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="contact-us.html">Contact us</a></li>
+          <li><a href="log-in.html">Log in</a></li>
+          <li><a href="sign-up.html">Sign up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="sign-up-container">
+      <h2 class="contact-heading">Sign up</h2>
+
+      <div class="sign-up-card">
+        <form action="submit-page.html" method="post">
+          <div class="input-container">
+            <div class="user-details">
+              <label for="fName" id="fName-label">First Name:</label>
+              <input
+                type="text"
+                id="fName"
+                name="fName"
+                placeholder="Type Your First Name"
+                required
+              />
+
+              <label for="lName" id="lName-label">Last Name:</label>
+              <input
+                type="text"
+                id="lName"
+                name="lName"
+                placeholder="Type Your Last Name"
+                required
+              />
+
+              <label for="email" id="new-email-label">Email:</label>
+              <input
+                type="email"
+                id="new-email"
+                name="email"
+                placeholder="example@gmail.com"
+                required
+              />
+              <label for="pass" id="pass-label">Password:</label>
+              <input
+                type="password"
+                id="pass"
+                name="pass"
+                minlength="9"
+                placeholder="Create Password (minimum 9 characters)"
+                required
+              />
+            </div>
+
+            <input type="submit" id="submit-btn" value="Sign up" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
